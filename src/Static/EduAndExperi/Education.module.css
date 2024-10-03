@@ -1,0 +1,103 @@
+.timeline {
+  width:60%;
+  height: auto;
+  background: mediumaquamarine;
+  mix-blend-mode: normal;
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  margin-left: 30px;
+  box-shadow: 0px 20px 53px -30px rgba(95, 102, 173, 0.566816);
+  border-radius: 10px;
+}
+.title-style{
+    padding: 14px 14px 0px 14px;
+    font-family: arial;
+    font-size: 16px;
+}
+.timeline .edu_h2_style {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color: mediumaquamarine;
+}
+.timeline label {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 66px;
+  margin-top: 10px;
+  color: black;
+}
+.timeline .box {
+  width: 100%;
+  height: 67vh;
+  background: #fbfcfd;
+  margin-top: 99.5px;
+}
+.timeline .box .container {
+  width: 100%;
+  height: 357px;
+  display: flex;
+}
+.timeline .box .container .lines {
+  margin-left: 40px;
+  margin-top: -25px;
+}
+.timeline .box .container .lines .dot {
+  width: 15px;
+  height: 15px;
+  background: #D1D6E6;
+  border-radius: 7px;
+}
+.timeline .box .container .lines .line {
+  height: 122px;
+  width: 4px;
+  background: #D1D6E6;
+  margin-left: 5.3px;
+}
+.timeline .box .container .cards {
+  margin-left: 12px;
+  transform: translateY(-50px);
+}
+.timeline .box .container .cards .card {
+  width: auto;
+  height: auto;
+  padding: 8px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 #eeeeee40;
+  border-radius: 10px;
+  box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.0944602);
+  margin-bottom: 10px;
+  border: 1px solid aquamarine;
+}
+.timeline .box .container .cards .card.mid {
+  height: 71px;
+}
+.timeline .box .container .cards .card .edu_h4_style {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 16px;
+    margin-bottom: 5px;
+    color: #2B2862;
+}
+.timeline .box .container .cards .card .edu_para_style {
+  /* font-family: Open Sans; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2B2862;
+  margin-left: 15px;
+}
+.timeline .box .bottom {
+  width: 100%;
+  height: 107px;
+  background: #fff;
+  box-shadow: 0 0 2px #eeeeee50;
+  padding-top: 45px;
+}

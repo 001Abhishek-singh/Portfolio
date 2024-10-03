@@ -1,0 +1,17 @@
+.Contactdetails-style{
+    border-bottom: 1px solid gray;
+    text-align: justify;
+    margin-bottom: 0px;
+    padding-left: 20%;
+    padding-right: 10%;
+}
+.UserDetails-Icons-style{
+    width: 30px;
+    height: 30px;
+}
+.Contactdetails-Span-style{
+    color: mediumturquoise;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}

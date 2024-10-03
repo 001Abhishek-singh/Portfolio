@@ -1,0 +1,10 @@
+.listStyling{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.themeModesize{
+    width:50px;
+    height: 50px;
+}

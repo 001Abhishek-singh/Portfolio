@@ -1,0 +1,12 @@
+.App_container{
+    padding: 2px;
+    transition: 0.1s;
+}
+.App_container.light{
+    background-color: #FAF9F6;
+    color: black;
+}
+.App_container.dark{
+    background-color: #28282B;
+    color: white;
+}
