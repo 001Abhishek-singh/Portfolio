@@ -9,10 +9,10 @@ const ContactBox = () =>{
                 <h1 className='mb-2 py-2 px-4 fw-bolder'>Let's Work Together</h1>
                 <p className='text-center py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, molestiae vel? Quisquam tempora nihil minima aliquid animi <br /> illo commodi quidem, hic consectetur libero error, soluta nobis, excepturi repellendus maxime cumque.</p>
             </div>
-            <div className="col-10 col-md-6 my-3">
+            <div className="col-12 col-md-6 my-3">
                 <UserDetails></UserDetails>
             </div>
-            <div className="col-10 col-md-6 my-3">
+            <div className="col-12 col-md-6 my-3">
                 <Message></Message>
             </div>
         </div>

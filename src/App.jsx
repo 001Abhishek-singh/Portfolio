@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useEffect, useState } from 'react'
-import './App.css'
+import { useEffect, useState } from 'react';
+import {Routes, Route} from 'react-router-dom';
+import './App.css';
 import Navbar from './Components/About/Navbar.jsx';
 import About from './Components/About/About.jsx';
 import { useTypewriter } from 'react-simple-typewriter';
@@ -35,17 +36,27 @@ function App() {
     const [text] = useTypewriter({words:['Electrical Engineer', 'Frontend Developer', 'Full Stack Developer', 'Python Developer'],loop:{}, typeSpeed:120,deleteSpeed:60});
     return (
       <>
-    <div className={`App_container ${lightMode}`}>
       <Navbar lightMode={lightMode} setlightMode={setlightMode}></Navbar>
-      <About playmode={playmode} setplaymode={setplaymode} text={text}></About>
-      <Activity>
-        <SkillsBox></SkillsBox>
-      </Activity>
-      <ExperienceBox></ExperienceBox>
-      <ProjectBox></ProjectBox>
-      <ContactBox></ContactBox>
-      <SocialMedia></SocialMedia>
-    </div>
+      <Routes>
+        <Route path='' element={
+          <div className={`App_container ${lightMode}`}>
+            <About playmode={playmode} setplaymode={setplaymode} text={text}></About>
+            <Activity>
+              <SkillsBox></SkillsBox>
+            </Activity>
+            <ExperienceBox></ExperienceBox>
+            <ProjectBox></ProjectBox>
+            <ContactBox></ContactBox>
+            <SocialMedia></SocialMedia>
+          </div> } />
+          <Route path='/About' element={<About/>} />
+          <Route path='/Skills' element={<SkillsBox/>} />
+          <Route path='/Education' element={<ExperienceBox />} />
+          <Route path='/Projects' element={<ProjectBox />}/>
+          <Route path='/Contact' element={<ContactBox />}/>
+      </Routes>
+
+      {/* <Link to="/about"/>about</Link> */}
     </>
   )
 }

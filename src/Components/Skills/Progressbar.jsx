@@ -1,7 +1,12 @@
 import style from '../../Static/Skills/Progressbar.module.css'
+import { useState } from 'react';
 const Progressbar = ({skillslist1, skillslist2}) => {
+    const[value, setvalue] = useState(true);
+    const handleOnChange = () =>{
+        console.log(value);
+        setvalue(!value);
+    };
     return <>
-
     <div className="container mx-auto mt-4">
         <div className="row py-2">
             {
@@ -34,6 +39,7 @@ const Progressbar = ({skillslist1, skillslist2}) => {
             }  
         </div>
             {/* 2nd skills list */}
+            {!value? 
         <div className="row py-2">
             {
                 skillslist2.map((values) => (
@@ -62,7 +68,9 @@ const Progressbar = ({skillslist1, skillslist2}) => {
                 </div>  
                 ))
             } 
-        </div>
+        </div> : ""}
+
+        <button onClick={handleOnChange}>{!value ? 'Hide' : 'See More'}</button>
     </div>
 
 

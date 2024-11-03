@@ -18,7 +18,6 @@ import IOT from '../../assets/IOT.png';
 import FIGMA from '../../assets/Figma.png';
 import Git_Github from '../../assets/Git_Github.jpeg';
 import DSA from '../../assets/DSA.png';
-
 const SkillsBox = () =>{
     const skillslist1 = [{tech:'Electrical Engineering', percent:'100%', images:Electrical},{tech:'C Language', percent:'75%', images:C_Language},{tech:'Java', percent:'65%', images:Java},{tech:'Python', percent:'75%', images:Python},{tech:'DSA', percent:'35%', images:DSA}, {tech:'HTML5',percent:'91%', images:HTML},{tech:'CSS3',percent:'76%', images:CSS},{tech:'Javascript',percent:'65%', images:JS}]
 
@@ -35,7 +34,9 @@ const SkillsBox = () =>{
                 <Progressbar skillslist1={skillslist1} skillslist2={skillslist2} />
             </div>
             <div className='col-12 col-md-12'>
-                <Button>{buttonlist[8]}</Button>
+                <Button>
+                    {buttonlist[8]}
+                </Button>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 import style from "../../Static/Project/Project.module.css"
 import { projectlist } from "../Project/ProjectList.jsx";
-import Image from "../../assets/project.jpeg"
+import Image from "../../assets/project.jpeg";
 const Project = () => {
     return <>
 

@@ -21,7 +21,7 @@ const EduButton = ({currentValue, setcurrentValue}) => {
         </div>
         <div className="row">
             <div className="col-12 col-md-12">
-                <div>
+                <div className="d-flex justify-content-center align-items-center">
                     {currentValue === 'Experience' ? 
                         <Experience />:
                         <Education />

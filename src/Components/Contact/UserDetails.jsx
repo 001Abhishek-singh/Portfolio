@@ -8,6 +8,7 @@ import { buttonlist } from '../Project/ProjectList.jsx';
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const UserDetails = () => {
     return <>
     <div>
@@ -55,23 +56,35 @@ const UserDetails = () => {
                 
                 <p className='d-flex justify-content-around align-items-center'>
                     <span>
-                        <FaLinkedin className={style['UserDetails-Icons-style']}/>
+                        <Link to="https://www.linkedin.com/in/abhishek-singh-72ab66251/">
+                            <FaLinkedin className={style['UserDetails-Icons-style']}/>
+                        </Link>
                     </span>
                     <span>
-                        <FaGithub className={style['UserDetails-Icons-style']}/> 
+                        <Link to="https://github.com/001Abhishek-singh">
+                            <FaGithub className={style['UserDetails-Icons-style']}/> 
+                        </Link>
                     </span>
                     <span>
-                        <IoLogoInstagram className={style['UserDetails-Icons-style']}/> 
+                        <Link to="#">
+                            <IoLogoInstagram className={style['UserDetails-Icons-style']}/>
+                        </Link> 
                     </span>
                     <span>
-                        <BsTwitterX className={style['UserDetails-Icons-style']}/> 
+                        <Link to="#">
+                            <BsTwitterX className={style['UserDetails-Icons-style']}/> 
+                        </Link>
                     </span>
                 </p>
             </div>
         </div>
         
         <div className='d-flex justify-content-center align-items-center my-3 py-2'>
-            <Button>{buttonlist[9]}</Button>
+            <Button>
+                <Link id={style['changeContactColor']} to="/Contact">
+                    {buttonlist[9]}
+                </Link>
+            </Button>
         </div>
         
     </div>

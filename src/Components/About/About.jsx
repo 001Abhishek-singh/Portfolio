@@ -5,6 +5,7 @@ import {Cursor} from 'react-simple-typewriter';
 import Abhishek from '../../assets/Abhishek_Profile_QualifyEd_1.jpg';
 import Button from '../Project/Button';
 import { buttonlist } from '../Project/ProjectList';
+import resume from '../../assets/Abhishek_Electrical.pdf';
 const About = ({playmode, setplaymode, text}) =>{
 
     const Handleplay = ()=>{
@@ -18,7 +19,9 @@ const About = ({playmode, setplaymode, text}) =>{
                 <h1 className={style['userName']}>Abhishek</h1>
                 <h3 className={style['jobtype-effect']}>{text}<span><Cursor /></span></h3>
                 <div className={style['buttonContainer']}>
-                <button className={style["cvButton"]}>Download CV</button>
+                <button className={style["cvButton"]}>
+                    <a href={resume} className={style['anchor_style']} download="resume">Download CV</a>
+                </button>
                 <button className={style["cvButton"]}>
                     {playmode == 'play' ? <FaCirclePause onClick={() => {Handleplay()}}/> : <FaCirclePlay onClick={() => (Handleplay())}/>}
                     Play Video</button>
